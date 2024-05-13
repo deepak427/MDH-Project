@@ -1,0 +1,78 @@
+.main-bar {
+    margin-top: 4rem;
+    margin-left: 5rem;
+    padding: 1rem 1.5rem;
+}
+
+.results{
+    margin-bottom: 1rem;
+}
+
+.job-container {
+    background-color: #f8f9f9;
+    padding: 1rem;
+    border: solid 1px #0003;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.job-container .header-link {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(69,69,69);
+    border-bottom: solid 1px #0003;
+}
+
+.job-container .header-link:hover{
+    color: rgb(24,24,24);
+}
+
+.job-container .header-link:hover .apply-btn{
+    background-color: rgb(40,40,40);
+}
+
+.job-container .header-link .job-header{
+    margin-left: 1rem;
+}
+
+.job-container .header-link .apply-btn {
+    padding: 0.25rem 0.8rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    background-color: rgb(24,24,24);
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.job-container .header-link .vacancy-header {
+    align-items: center;
+    display: flex;
+}
+
+.eligibility-tags{
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.eligibility-tags .job-timing{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.eligibility-tags .tags {
+    display: flex;
+}
+
+.eligibility-tags .tags p{
+    margin: 2px;
+    padding: 4px;
+    font-size: 13px;
+    background-color: #e1ecf4;
+    color: #39739d;
+}

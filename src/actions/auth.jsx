@@ -1,0 +1,27 @@
+import * as api from '../api'
+import { setCurrentUser } from './currentUser'
+import bcrypt from "bcryptjs/dist/bcrypt.js";
+
+export const signup = (authData, password, navigate) => async (dispatch) => {
+    try {
+        const hashedPassword = await bcrypt.hash(password, 12);
+        const { data } = await api.signUp({...authData, hashedPassword})
+        dispatch({type: 'AUTH', data})
+        dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))))
+        navigate('/')
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const login = (authData, navigate) => async (dispatch) => {
+    try {
+        console.log(authData)
+        const { data } = await api.logIn(authData)
+        dispatch({type: 'AUTH', data})
+        dispatch(setCurrentUser(JSON.parse(localStorage.getItem('Profile'))))
+        navigate('/')
+    } catch (error) {
+        console.log(error)
+    }
+}

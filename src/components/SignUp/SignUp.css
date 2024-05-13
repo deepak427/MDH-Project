@@ -1,0 +1,27 @@
+.info-div {
+  display: flex;
+}
+
+.info-div label {
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.info-div label select{
+    padding: 0.5rem;
+    font-weight: bold;
+    border: solid 1px #0003;
+    border-radius: 0.25rem;
+}
+
+.info-div label select option{
+    font-weight: bold;
+}
+
+.info-div textarea {
+  font-weight: bold;
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px #0003;
+}
